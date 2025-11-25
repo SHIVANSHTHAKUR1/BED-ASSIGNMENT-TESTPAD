@@ -1,9 +1,23 @@
 /* Tailwind loaded via CDN */
 
-body {
-  background-color: #f0f0f0;
+:root {
+  --bg-color: #050505;
+  --card-bg: #121212;
+  --text-color: #e0e0e0;
+  --neon-pink: #ff00ff;
+  --neon-cyan: #00ffff;
+  --neon-purple: #bc13fe;
+  --neon-green: #0aff0a;
+  --border-color: #333;
 }
 
-h1 {
-  color: red;
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--neon-cyan);
+  text-shadow: 0 0 5px var(--neon-cyan);
 }
